@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./custom.css" />
+  </head>
+  <body>
+    <nav class="h-16 w-full bg-[#F7FBFF] flex items-center justify-between p-4">
+      <a href="./" class="font-extrabold text-3xl">
+        <div class="flex gap-2 items-center">
+          <img
+            src="./icons/icon.jpg"
+            alt=""
+            class="border-2 border-indigo-400 rounded-full h-14 w-14"
+          />
+          Salman
+        </div>
+      </a>
+      <div
+        class="flex gap-4 font-semibold md:gap-6 lg:gap-8 xl:gap-12 items-center"
+      >
+        <a href="/" class="text-indigo-500 hover:text-indigo-600">Home</a>
+        <a href="about" class="hover:text-indigo-600">About</a>
+        <a
+          href="/contact"
+          class="bg-indigo-400 p-2 rounded text-white font-semibold"
+          >Contact</a
+        >
+      </div>
+    </nav>
+    <!-- ==== End of Nav ==== -->
+    <h1 class="text-center font-bold text-2xl py-5 capitalize">
+      Contact me At ease
+    </h1>
+    <div
+      class="w-full px-3 md:w-5/6 lg:w-4/6 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-3 mb-7"
+    >
+      <div class="col-span-1 flex flex-col gap-3">
+        <div class="w-full bg-gray-100 p-3 rounded-md gap-2 flex flex-col">
+          <p class="font-semibold">Phone number</p>
+          <div
+            class="flex gap-2 items-center justify-between bg-white py-1 px-2 rounded"
+          >
+            <p>(bd) +880 1608914499</p>
+            <button class="copy text-xs px-1" id="copy-number">copy</button>
+          </div>
+          <div
+            class="flex gap-2 items-center justify-between bg-white py-1 px-2 rounded"
+          >
+            <p>(bd) +880 1608914499</p>
+            <button class="copy text-xs px-1" id="copy-number">copy</button>
+          </div>
+        </div>
+        <div class="w-full bg-gray-100 p-3 rounded-md">
+          <p class="font-semibold">Email address</p>
+          <p class="bg-white py-1 px-2 overflow-x-hidden rounded">
+            salmanhossain11222626@gmail.com
+          </p>
+          <button class="copy text-sm px-2 py-1" id="copy-email">
+            Copy Email
+          </button>
+        </div>
+        <div class="w-full bg-gray-100 p-3 rounded-md">
+          <p class="font-semibold">Social Links</p>
+          <div class="flex gap-3 my-3">
+            <a href="">
+              <img src="" alt="" class="h-9 w-9 rounded bg-gray-400" />
+            </a>
+            <a href="">
+              <img src="" alt="" class="h-9 w-9 rounded bg-gray-400" />
+            </a>
+            <a href="">
+              <img src="" alt="" class="h-9 w-9 rounded bg-gray-400" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-1 lg:col-span-2">
+        <form
+          action=""
+          class="w-full bg-gray-200 rounded-md flex flex-col gap-3 px-2 md:px-5 pt-4"
+        >
+          <h2 class="capitalize text-lg font-semibold">
+            send me a direct Email
+          </h2>
+          <fieldset class="">
+            <label for="name">Enter name</label>
+            <input
+              type="text"
+              placeholder="enter your name"
+              id="name"
+              name="name"
+            />
+          </fieldset>
+          <fieldset>
+            <label for="email">Enter Email</label>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              id="email"
+              name="email"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <label for="message"> Your message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Enter your message"
+              required
+              rows="8"
+              class="p-3"
+            ></textarea>
+          </fieldset>
+          <button
+            class="bg-indigo-400 rounded p-2 mb-4 text-white font-semibold active:scale-90 duration-100"
+            type="submit"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- ===== FOOTER GOES DOWN HERE ====== -->
+    <div class="svg2"></div>
+    <footer class="relative bg-[#1F1F1F] pt-6 pb-12 text-white">
+      <div
+        class="w-4/6 mx-auto flex items-center justify-evenly flex-row flex-wrap gap-8 md:gap-0"
+      >
+        <div class="">
+          <p class="text-2xl font-bold">Salman Hossain</p>
+          <p class="caption-bottom py-2">Email: web.salman.pro@gmail.com</p>
+          <button
+            class="bg-white rounded text-black font-semibold active:scale-90 duration-100 p-2"
+          >
+            Copy Email
+          </button>
+        </div>
+        <div class="flex justify-between items-center gap-12">
+          <ul class="capitalize">
+            <li class="font-semibold capitalize">Important links</li>
+            <li><a href="/">home </a></li>
+            <li><a href="/">about </a></li>
+            <li><a href="/">contact </a></li>
+          </ul>
+          <ul class="capitalize">
+            <li class="font-semibold capitalize">social links</li>
+            <li><a href="/">Facebook </a></li>
+            <li><a href="/">Linked IN</a></li>
+            <li><a href="/">Github </a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

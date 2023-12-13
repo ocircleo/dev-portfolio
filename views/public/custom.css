@@ -1,0 +1,76 @@
+body{
+  background-color: white;
+}
+.welcome {
+  background: rgb(247, 251, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(247, 251, 255, 1) 0%,
+    rgba(151, 203, 255, 1) 73%,
+    rgba(59, 169, 247, 1) 100%
+  );
+}
+.svg {
+  aspect-ratio: 900/100;
+  overflow: hidden;
+  background-image: url("./img/wave.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: auto;
+  width: 100%;
+}
+.svg2 {
+  aspect-ratio: 900/40;
+  overflow: hidden;
+  background-image: url("./img/wave2.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  height: auto;
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .svg {
+    aspect-ratio: 900/80;
+  }
+  nav {
+    overflow-x: scroll;
+  }
+}
+/* ==== contact page css  */
+.copy{
+  border: 2px dashed black;
+  text-transform: capitalize;
+  border-radius: 3px;
+  background-color: white;
+  color: black;
+  margin: 8px 0;
+  font-weight: 700;
+  text-align: center;
+  transition: .2s;
+}
+.copy:active{
+  transform: scale(.9);
+}
+fieldset{
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0px;
+}
+fieldset label{
+  font-size: 17px;
+}
+fieldset input{
+  padding: 6px 5px;
+  border-radius: 5px;
+}
+fieldset input:focus{
+  background-color: aliceblue;
+}
+
