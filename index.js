@@ -6,7 +6,7 @@ const { mainRouter } = require("./routes/route");
 //middlewere
 require("dotenv").config();
 app.use(cors());
-app.use(express.static("./views/public"));
+app.use(express.static(__dirname + "/views/public/"));
 //routes
 app.get("/*", mainRouter);
 app.use((req, res) => {

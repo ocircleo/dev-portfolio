@@ -1,4 +1,4 @@
-body{
+body {
   background-color: white;
 }
 .welcome {
@@ -6,8 +6,8 @@ body{
   background: linear-gradient(
     180deg,
     rgba(247, 251, 255, 1) 0%,
-    rgba(151, 203, 255, 1) 73%,
-    rgba(59, 169, 247, 1) 100%
+    rgb(167, 210, 252) 73%,
+    rgb(180, 218, 245) 100%
   );
 }
 .svg {
@@ -35,6 +35,15 @@ body{
   height: auto;
   width: 100%;
 }
+.welcome-about {
+  background: linear-gradient(
+    180deg,
+    rgba(247, 251, 255, 1) 0%,
+    rgb(198, 227, 255) 73%,
+    rgb(202, 223, 238) 100%
+  );
+  clip-path: polygon(0 1%, 100% 0, 100% 100%, 0 74%);
+}
 @media screen and (max-width: 600px) {
   .svg {
     aspect-ratio: 900/80;
@@ -42,9 +51,18 @@ body{
   nav {
     overflow-x: scroll;
   }
+  .welcome-about {
+    background: linear-gradient(
+      180deg,
+      rgba(247, 251, 255, 1) 0%,
+      rgb(198, 227, 255) 73%,
+      rgb(202, 223, 238) 100%
+    );
+    clip-path: polygon(0 1%, 100% 0, 100% 100%, 0 92%);
+  }
 }
 /* ==== contact page css  */
-.copy{
+.copy {
   border: 2px dashed black;
   text-transform: capitalize;
   border-radius: 3px;
@@ -53,24 +71,28 @@ body{
   margin: 8px 0;
   font-weight: 700;
   text-align: center;
-  transition: .2s;
+  transition: 0.2s;
 }
-.copy:active{
-  transform: scale(.9);
+.copy:active {
+  transform: scale(0.9);
 }
-fieldset{
+fieldset {
   display: flex;
   flex-direction: column;
   padding: 5px 0px;
 }
-fieldset label{
+fieldset label {
   font-size: 17px;
 }
-fieldset input{
+fieldset input {
   padding: 6px 5px;
   border-radius: 5px;
 }
-fieldset input:focus{
+fieldset input:focus {
   background-color: aliceblue;
 }
 
+.nt {
+  background-image: url("./img/nt.png");
+  background-size: 5%;
+}
