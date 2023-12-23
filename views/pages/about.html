@@ -23,9 +23,7 @@
         class="flex gap-4 font-semibold md:gap-6 lg:gap-8 xl:gap-12 items-center"
       >
         <a href="./" class="hover:text-indigo-600">Home</a>
-        <a href="/about" class="text-indigo-500 hover:text-indigo-600"
-          >About</a
-        >
+        <a href="/about" class="text-indigo-500 hover:text-indigo-600">About</a>
         <a
           href="/contact"
           class="bg-indigo-400 p-2 rounded text-white font-semibold"
@@ -89,7 +87,11 @@
             class="relative h-56 sm:h-60 lg:h-72 w-full flex flex-col lg:flex-row items-center justify-center bg-blue-50 rounded flex-shrink flex-wrap nt"
           >
             <div class="bg-blue-50 flex items-center flex-col lg:flex-row">
-              <p class="text-4xl p-4 bg-gray-200 rounded self-stretch text-center">Next js</p>
+              <p
+                class="text-4xl p-4 bg-gray-200 rounded self-stretch text-center"
+              >
+                Next js
+              </p>
               <span class="text-5xl font-semibold">&</span>
               <p class="text-4xl p-4 bg-gray-200 rounded">TypeScript</p>
             </div>
@@ -98,39 +100,54 @@
       </div>
     </div>
     <!-- === End of Current status ===== -->
-      <!-- ===== FOOTER GOES DOWN HERE ====== -->
-      <div class="svg2"></div>
-      <footer class="relative bg-[#1F1F1F] pt-6 pb-12 text-white">
-        <div
-          class="w-4/6 mx-auto flex items-center justify-evenly flex-row flex-wrap gap-8 md:gap-0"
-        >
-          <div class="">
-            <p class="text-2xl font-bold">Salman Hossain</p>
-            <p class="caption-bottom py-2">Email: web.salman.pro@gmail.com</p>
-            <button
-              onclick="copy('web.salman.pro@gmail.com','copy-footer','Copy Email')"
-              class="bg-white rounded text-black font-semibold active:scale-90 duration-100 p-2"
-              id="copy-footer"
-            >
-              Copy Email
-            </button>
-          </div>
-          <div class="flex justify-between items-center gap-12">
-            <ul class="capitalize">
-              <li class="font-semibold capitalize">Important links</li>
-              <li><a href="/">home </a></li>
-              <li><a href="/">about </a></li>
-              <li><a href="/">contact </a></li>
-            </ul>
-            <ul class="capitalize">
-              <li class="font-semibold capitalize">social links</li>
-              <li><a href="/">Facebook </a></li>
-              <li><a href="/">Linked IN</a></li>
-              <li><a href="/">Github </a></li>
-            </ul>
-          </div>
+    <!-- ===== FOOTER GOES DOWN HERE ====== -->
+    <div class="svg2"></div>
+    <footer class="relative bg-[#1F1F1F] pt-6 pb-12 text-white">
+      <div
+        class="w-4/6 mx-auto flex items-center justify-evenly flex-row flex-wrap gap-8 md:gap-0"
+      >
+        <div class="">
+          <p class="text-2xl font-bold">Salman Hossain</p>
+          <p class="caption-bottom py-2">Email: web.salman.pro@gmail.com</p>
+          <button
+            onclick="copy('web.salman.pro@gmail.com','copy-footer','Copy Email')"
+            class="bg-white rounded text-black font-semibold active:scale-90 duration-100 p-2"
+            id="copy-footer"
+          >
+            Copy Email
+          </button>
         </div>
-      </footer>
-      <script src="./copy.js"></script>
+        <div class="flex justify-between items-center gap-12">
+          <ul class="capitalize">
+            <li class="font-semibold capitalize">Important links</li>
+            <li><a href="/">home </a></li>
+            <li><a href="/about">about </a></li>
+            <li><a href="/contact">contact </a></li>
+          </ul>
+          <ul class="capitalize">
+            <li class="font-semibold capitalize">social links</li>
+            <li>
+              <a
+                href="https://web.facebook.com/profile.php?id=100047794972377"
+                target="_blank"
+                >Facebook
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/salman-hossain-929963214"
+                target="_blank"
+                >Linked IN</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/ocircleo" target="_blank">Github </a>
+            </li>
+            <li><a href="/sitemap">SiteMap </a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./copy.js"></script>
   </body>
 </html>
