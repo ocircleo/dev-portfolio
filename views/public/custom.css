@@ -96,3 +96,14 @@ fieldset input:focus {
   background-image: url("./img/nt.png");
   background-size: 5%;
 }
+.of {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.of a{
+  color:blue;
+  text-decoration: underline;
+  font-weight: 800;
+}
